@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestrso equipo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="hed">
+  <header  id="MainHeader">
+    
+    <nav class="navbar">
+      <div class="navbarlogo">
+      <img src="img/ezlink.jpeg" href="index.html">
+    </div>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre nosotros</a></li>
+        <li><a href="team.html" class="active">Nuestro equipo</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+    
+  </header>
+<!--
+  <main class="container team-section">
+    <section class="member">
+      <div>
+      <img src="img/fiesta1.jpg" >
+      </div>
+      <div>
+        <h3>Diego Alonso</h3>
+        <small>Director</small>
+        <p>Diego es el responsable de las decisiones importantes y dirige el equipo de profesionales. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+    </section>
+    <section class="member">
+      <img src="img/fiesta2.jpg" >
+      <div>
+        <h3>Álvaro Palacios</h3>
+        <small>Director</small>
+        <p>Con amplia experiencia en estrategia y operaciones, Álvaro lidera iniciativas clave para el crecimiento del negocio y la excelencia en el servicio al cliente.</p>
+      </div>
+    </section>
+    <section class="member">
+      <img src="img/fiesta3.jpg" >
+      <div>
+        <h3>María González</h3>
+        <small>Gerente de Proyectos</small>
+        <p>María coordina equipos multidisciplinarios para entregar proyectos a tiempo, con calidad y alineados a los objetivos de cada cliente.</p>
+      </div>
+    </section>
+  </main>
+-->
+  <main>  
+  <div class="hed">
+        <div class="hed-content">
+      <h1>Nuestro equipo</h1>  
+      <p>En ezlink celebramos dia a dia nuestro trabajo, ademas de damos numerosos incentivos y realizamos celebraciones mensuales para que todo nuestro equipo tenga garantizada una noche de diversion</p>   <br>   
+      <div class="carousel">
+  <div class="carousel-track">
+    <div class="slide">
+      <img src="img/fiesta2.jpg" alt="Imagen 1">
+      <div class="caption">Confraterizacion del es de Agosto</div>
+    </div>
+    <div class="slide">
+      <img src="img/fiesta2.jpg" alt="Imagen 2">
+      <div class="caption">Premiacion de agentes TOP</div>
+    </div>
+    <div class="slide">
+      <img src="img/fiesta3.jpg" alt="Imagen 3">
+      <div class="caption">Cena de fin de año</div>
+    </div>
+  </div>
+  <button class="carousel-btn prev">‹</button>
+  <button class="carousel-btn next">›</button>
+</div>
+
+    </div>    
+    </div>
+    
+</main>
+
+  <footer>
+    <p>&copy; 2025 Ezlink S.R.L. — Todos los derechos reservados</p>
+  </footer>
+  <script src="script.js"></script>
+
+  <script>
+    document.querySelectorAll('.navbar').forEach(nav=>{
+      const t=nav.querySelector('.menu-toggle');
+      const links=nav.querySelector('.nav-links');
+      t.addEventListener('click', ()=> links.classList.toggle('open'));
+    });
+
+    
+  </script>
+
+
+</body>
+</html>

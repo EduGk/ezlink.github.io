@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresa - Inicio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hed" id="hed">
+    
+    <nav class="navbar">
+      <div class="navbarlogo">
+      <img src="img/ezlink.jpeg" href="index.html">
+    </div>      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="about.html">Sobre nosotros</a></li>
+        <li><a href="team.html">Nuestro equipo</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+    
+    <div class="hed-content">
+      <h1>EZ Link </h1>
+      <p>Somos especialistas en la gestión de cobranza para diferentes sectores, como banca, telecomunicaciones y servicios públicos, abarcando países de toda América Latina. Contamos con una infraestructura tecnológica avanzada y un equipo altamente capacitado para ofrecer soluciones personalizadas y eficientes que optimicen el proceso de recuperación de deudas.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hed">
+      <h2>Nuestro enfoque</h2>
+      <div class="services">
+        <div class="service">
+          <p>Trabajamos bajo un enfoque multicanal que incluye llamadas telefónicas, correos electrónicos, mensajes de texto y plataformas digitales, asegurando una comunicación efectiva y respetuosa con los deudores, y manteniendo siempre un compromiso con la calidad, la transparencia y el cumplimiento normativo a nivel local e internacional.</p>
+        </div>
+              </div>
+                    <div class="services">
+
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ezlink S.R.L. — Todos los derechos reservados</p>
+  </footer>
+<script src="script.js"></script>
+  <script>
+    document.querySelectorAll('.navbar').forEach(nav=>{
+      const t=nav.querySelector('.menu-toggle');
+      const links=nav.querySelector('.nav-links');
+      t.addEventListener('click', ()=> links.classList.toggle('open'));
+    });
+  </script>
+</body>
+</html>

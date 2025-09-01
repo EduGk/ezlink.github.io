@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre nosotros</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hed">
+    
+    <nav class="navbar">
+<div class="navbarlogo">
+      <img src="img/ezlink.jpeg" href="index.html">
+    </div>      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html" class="active">Sobre nosotros</a></li>
+        <li><a href="team.html">Nuestro equipo</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+      </ul>
+    </nav>
+    
+    <div class="hed-content">
+      <h1>Sobre nosotros</h1>
+      <p>¿Qué buscamos?</p>
+    </div>
+  </header>
+
+  <main class="container team-section">
+    <section class="member">
+      <div>
+      <img src="img/fiesta1.jpg" >
+      </div>
+      <div>
+        <h3>Misión</h3>
+        <p>Misio xcx v x  cv bgx xc bvbv dh bvc cghn  bv v b vbegvcxn</p>
+      </div>
+    </section>
+    <section class="member">
+      <img src="img/fiesta2.jpg" >
+      <div>
+        <h3>Visión</h3>
+                <p>Misidsadasdsadsadsadsadasdasdasd  av cx xc x xc cx xc cx cx on</p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ezlink S.R.L. — Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+
+    
+    document.querySelectorAll('.navbar').forEach(nav=>{
+      const t=nav.querySelector('.menu-toggle');
+      const links=nav.querySelector('.nav-links');
+      t.addEventListener('click', ()=> links.classList.toggle('open'));
+    });
+  </script>
+</body>
+</html>

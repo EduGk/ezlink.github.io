@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hed">
+    
+    <nav class="navbar">
+<div class="navbarlogo">
+      <img src="img/ezlink.jpeg" href="index.html">
+    </div>      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre nosotros</a></li>
+        <li><a href="team.html">Nuestro equipo</a></li>
+        <li><a href="contact.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+    
+    <div class="hed-content">
+      <h1>Contáctanos</h1>
+      <p>Estamos listos para ayudarte</p>
+    </div>
+  </header>
+
+  <main class="container contacto">
+    <div class="container-narrow" style="padding:0">
+      <h2>Escríbenos</h2>
+      <p>Completa el formulario o envíanos un mensaje directo a WhatsApp.</p>
+<form id="contact-form" class="contact-form">
+  <div class="form-group">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="name" placeholder="Tu nombre" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Correo electrónico</label>
+    <input type="email" name="email" placeholder="tu@email.com" required>
+  </div>
+  <div class="form-group">
+    <label for="mensaje">Mensaje</label>
+    <textarea name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+  </div>
+  <button class="btn btn-primary" type="submit">Enviar</button>
+</form>
+<p id="status"></p>
+      
+      <div class="whatsapp" style="text-align:center;margin-top:.5rem">
+        <a href="https://wa.me/59170000000?text=Hola%20quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank" rel="noopener">
+          <img src="img/whatsapp.svg" alt="WhatsApp">
+          Escríbenos por WhatsApp
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ezlink S.R.L. — Todos los derechos reservados</p>
+  </footer>
+
+  <script src="scriptC.js"></script>
+
+  <script>
+    document.querySelectorAll('.navbar').forEach(nav=>{
+      const t=nav.querySelector('.menu-toggle');
+      const links=nav.querySelector('.nav-links');
+      t.addEventListener('click', ()=> links.classList.toggle('open'));
+    });
+  </script>
+</body>
+</html>
